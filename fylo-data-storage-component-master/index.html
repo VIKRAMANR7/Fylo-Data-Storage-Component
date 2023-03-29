@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-component">
+        <img src="./images/logo.svg" class="logo" />
+        <div class="images">
+          <div class="document">
+            <a href="#"><img src="./images/icon-document.svg" /></a>
+          </div>
+          <div class="folder">
+            <a href="#"><img src="./images/icon-folder.svg" /></a>
+          </div>
+          <div class="upload">
+            <a href="#"><img src="./images/icon-upload.svg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="tooltip"><span id="remain">0</span><span class="second">GB LEFT</span></div>
+      <div class="storage-component">
+        <div class="slider-component">
+          <div class="details">
+            You've used <span id="currentVal">100</span> GB of your storage
+          </div>
+          <div class="field">
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="0"
+              steps="1"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <div class="values">
+            <div class="value-left">0 GB</div>
+            <div class="value-right">1000 GB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
